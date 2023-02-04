@@ -1,0 +1,1 @@
+ <div :class="[task.reminder ? 'reminder' : '', 'task']">
