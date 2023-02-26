@@ -17,11 +17,13 @@ const router = createRouter({
     {
       path: '/teams/:id',
       component: TeamMembers,
+      props: true,
     },
     {
       path: '/users',
       component: UsersList,
     },
+    { path: '/:pathMatch(.*)', redirect: '/teams' },
   ],
   history: createWebHistory(),
 });
