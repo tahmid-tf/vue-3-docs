@@ -29,6 +29,10 @@ export default {
     };
   },
 
+  mounted() {
+    console.log(this.$route.query.sort);
+  },
+
   methods: {
     loadmembers(route) {
       const teamId = route.params.id;
